@@ -116,6 +116,6 @@ setup(
     author='Simon Glass <sjg@chromium.org>',
     description='Python binding for libfdt',
     ext_modules=[libfdt_module],
-    package_dir={'': objdir},
-    py_modules=['pylibfdt/libfdt'],
+    package_dir={'': 'pylibfdt'},
+    py_modules=['libfdt'],
 )

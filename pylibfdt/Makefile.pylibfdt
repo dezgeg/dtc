@@ -14,7 +14,6 @@ endef
 $(PYMODULE): $(PYLIBFDT_srcs)
 	@$(VECHO) PYMOD $@
 	$(call run_setup, $^, build_ext --inplace)
-	mv _libfdt.so $@
 
 install_pylibfdt: $(PYMODULE)
 	$(VECHO) INSTALL-PYLIB; \
